@@ -1,0 +1,26 @@
+.createForm {
+    width: 736px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container {
+    max-width: 46rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+}
+
+.createForm input {
+    width: 39.875rem;
+    height: 4rem;
+
+}
+
+.createForm button {
+    width: 5.625rem;
+    height: 4rem;
+}
