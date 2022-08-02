@@ -11,10 +11,15 @@ function App() {
       <Header />
       <div className={styles.container}>
         <form className={styles.createForm}>
-          <input />
+          <input 
+            type={"text"}
+            name="task"
+            id="task"
+            placeholder="Adicione uma nova tarefa"
+          />
           <button type="submit">
             Criar
-            <PlusCircle size={20} />
+            <PlusCircle size={22} />
           </button>
         </form>
       </div>
