@@ -3,7 +3,7 @@
 
     gap: 1.5rem;
 
-    width: 46rem;
+    /* width: 46rem; */
 
 }
 
@@ -36,7 +36,7 @@
 }
 
 .taskList {
-    width: 46rem;
+    /* width: 46rem; */
     height: 15.25rem;
 
     max-height: 15.25rem;
@@ -75,3 +75,5 @@
     font-size: 1rem;
 
 }
+
+/* @media (max-width:) */

@@ -1,7 +1,5 @@
 import styles from "./Task.module.css";
 
-import classNames from "classnames";
-
 import { CheckCircle, Circle, Trash } from "phosphor-react";
 
 export interface TaskProps {
