@@ -84,4 +84,18 @@
         font-size: 87.5%;
 
     }
+
+    .createForm {
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .createForm input, .createForm button {
+        max-width: 46rem;
+
+    }
+
 }
