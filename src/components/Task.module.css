@@ -16,12 +16,22 @@
 
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
 .task p {
     color: var(--gray-100);
+
+}
+
+.box {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 8px;
 
 }
 

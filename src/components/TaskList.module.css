@@ -76,4 +76,11 @@
 
 }
 
+.taskListBody {
+    overflow-y: auto;
+
+    max-height: 27rem;
+
+}
+
 /* @media (max-width:) */

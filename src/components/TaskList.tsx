@@ -1,13 +1,24 @@
 import { useState } from "react";
 import { QuantityIndicator } from "./QuantityIndicator";
-import { Task, TaskProps } from "./Task";
+import { Task } from "./Task";
 
 import styles from "./TaskList.module.css";
 
-export function TaskList({ tasks }: { tasks: TaskProps[] }) {
+interface TaskListProps { 
+    tasks: {
+        id: any;
+        content: string;
+        checked: boolean;
     
-    const [totalTasks, setTotalTasks] = useState<number>(tasks.length);
+    }[];
+    onTaskUpdate: (id: number) => void
+    onTaskDelete: (id: number) => void
 
+}
+
+export function TaskList({ tasks, onTaskUpdate, onTaskDelete }: TaskListProps) {
+    
+    const totalTasks = tasks.length;
     const tasksChecked = tasks.filter(task => task.checked).length;
 
     return (
@@ -25,16 +36,22 @@ export function TaskList({ tasks }: { tasks: TaskProps[] }) {
             {
                 tasks.length > 0 ?
                 (    
-                    tasks.map(task => {
-                        return (
-                            <Task 
-                                key={task.id}
-                                id={task.id}
-                                content={task.content}
-                                checked={task.checked}
-                            />
-                        );
-                    })
+                    <div className={styles.taskListBody}>
+                        { 
+                            tasks.map(task => {
+                                return (
+                                    <Task 
+                                        key={task.id}
+                                        id={task.id}
+                                        content={task.content}
+                                        checked={task.checked}
+                                        onUpdate={onTaskUpdate}
+                                        onDelete={onTaskDelete}
+                                    />
+                                );
+                            })
+                        }
+                    </div>
                 ) : (
                     <section className={styles.taskList}>
                         <img 

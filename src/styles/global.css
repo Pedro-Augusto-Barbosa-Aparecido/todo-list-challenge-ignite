@@ -24,6 +24,19 @@
   --purple-500: #5E60CE;
 
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--gray-500);
+
+  border-radius: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-700);
+  border-radius: 8px;
+}
   
 body {
   background: var(--gray-600);

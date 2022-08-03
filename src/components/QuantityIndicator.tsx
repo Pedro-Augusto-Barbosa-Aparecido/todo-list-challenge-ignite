@@ -11,7 +11,7 @@ export function QuantityIndicator ({ total, finished = false, totalFinished }: Q
         <span className={styles.indicator}>
             { 
             
-                finished ? (!(total === 0) ? `${totalFinished} de ${total}` : total) : total
+                finished ? (!(totalFinished === 0) ? `${totalFinished} de ${total}` : totalFinished) : total
 
             }
         </span>
