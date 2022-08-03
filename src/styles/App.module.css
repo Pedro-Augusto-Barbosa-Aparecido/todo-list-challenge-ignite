@@ -1,5 +1,5 @@
 .createForm {
-    width: 736px;
+    width: 46rem;
 
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .container {
-    max-width: 46rem;
+    width: 46rem;
     margin: 2rem auto;
     padding: 0 1rem;
 
@@ -47,11 +47,11 @@
 
     padding: 1rem;
 
-    gap: 8px;
+    gap: .5rem;
 
     line-height: 1.4;
 
-    font-size: 0.875;
+    font-size: 0.875rem;
     font-weight: bold;
 
     color: var(--white);
@@ -74,4 +74,11 @@
 .createForm input:focus {
     border: 1px solid var(--purple-500);
 
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+
+    }
 }
